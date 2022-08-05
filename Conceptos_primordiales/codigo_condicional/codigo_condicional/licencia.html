@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+
+<h1>Programa - ¿Será qué puedo conducir?</h1>
+
+
+<script>
+    function saltarLinea(){
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase){
+        document.write(frase);
+        saltarLinea();
+    }
+
+
+    var edad = parseInt(prompt("¿Cuál es tu edad?"));
+    //var tieneLicencia = prompt("¿Tienes licencia? Responde S o N");
+
+    if(edad >= 18){
+        imprimir(`Usted puede conducir su edad es ${edad}`)
+    }
+
+    if(edad < 18){
+        imprimir("Usted no puede conducir, es menor de edad");
+    }
+</script>
